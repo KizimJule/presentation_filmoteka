@@ -10,7 +10,7 @@
           align-items: center;
 }
 
-.header-nav__list, .contact-quickly, .feature__list, .contacts, .promo__list, .team__list, .social-list, .clients__list, .filter, .portfolio, .mobile-menu__list, .mobile-menu__contacts, .mobile-menu__social, .thanks__list {
+.header-nav__list, .contact-quickly, .feature__list, .contacts, .promo__list, .social-list, .clients__list, .filter, .portfolio, .mobile-menu__list, .mobile-menu__contacts, .mobile-menu__social, .thanks__list {
   list-style-type: none;
 }
 
@@ -888,6 +888,9 @@ img {
   margin: -10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
