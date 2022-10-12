@@ -1,0 +1,37 @@
+.footer {
+  background-color: $colorFooter;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__adress {
+    @media screen and (max-width: 1279px) {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-right: 70px;
+    }
+  }
+}
+
+.join {
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 93px;
+  }
+}
+
+.join__title {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}

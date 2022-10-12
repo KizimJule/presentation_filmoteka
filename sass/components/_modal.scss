@@ -1,0 +1,146 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: center;
+
+  width: 95%;
+
+  padding: 40px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  opacity: 1;
+
+  transition: transform $generalAnimation;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+
+  .backdrop.is-hidden & {
+    transform: translateY(-200%);
+  }
+}
+
+.modal__title {
+  display: inline;
+
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: $colorH2-h3;
+}
+
+.modal__form {
+  display: block;
+  width: 100%;
+
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    &:focus-within {
+      color: $colorFocus;
+    }
+  }
+}
+
+.modal__label {
+  display: inline-block;
+
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.modal__custom {
+  position: relative;
+  display: block;
+  height: 40px;
+}
+
+.modal__input {
+  width: 100%;
+  height: 100%;
+
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border $generalAnimation;
+
+  &:focus,
+  &:focus {
+    border-color: $colorFocus;
+    outline: transparent;
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+
+  transition: fill $generalAnimation;
+}
+
+.modal__input:focus + .modal__icon {
+  fill: $colorFocus;
+}
+
+.modal__area-form {
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    &:focus-within {
+      color: $colorFocus;
+    }
+  }
+}
+
+.modal__area {
+  width: 100%;
+
+  padding: 8px;
+  resize: none;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #000000;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus,
+  &:focus {
+    border-color: $colorFocus;
+    outline: transparent;
+  }
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}

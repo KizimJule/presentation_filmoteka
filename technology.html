@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IceCream</title>
+    <title>Filmoteka</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+    <link rel="apple-icon" sizes="180x180" href="./images/favicon/favicon.png" />
+    <link rel="mask-icon" href="./images/favicon/favicon.svg" color="#ff6b08" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -26,32 +29,17 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header header-home">
       <div class="container header__container">
         <nav class="header-nav">
-          <a
-            class="logo logo--up"
-            href="https://nickleso.github.io/parcel-ice-team7/"
-            target="_blank"
-          >
-            <picture>
-              <source
-                srcset="
-                  ./images/present/logo.png    1x,
-                  ./images/present/logo@2x.png 2x
-                "
-              />
-              <img src="./images/present/logo.png" alt="" />
-            </picture>
+          <a href="kyzym.github.io/this-team/" class="logo logo--up link" target="_blank">
+            <svg class="icon-home" width="24" height="24" style="stroke: white">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+            <span class="logo-span">Filmoteka</span>
           </a>
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./index.html">початок</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./road.html">складнощі</a>
-            </li>
 
+          <ul class="header-nav__list">
             <li class="header-nav__item">
               <a class="header-nav__link" href="./team.html">команда</a>
             </li>
@@ -62,9 +50,10 @@
               <a class="header-nav__link" href="./benefits.html">Переваги</a>
             </li>
             <li class="header-nav__item">
-              <a
-                class="header-nav__link header-nav__link--current"
-                href="./technology.html"
+              <a class="header-nav__link" href="./road.html">складнощі</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--current" href="./technology.html"
                 >Технології</a
               >
             </li>
@@ -78,9 +67,7 @@
     <main>
       <section class="benefits section">
         <div class="container container--benefits">
-          <h1 class="title benefits__title">
-            Стек використовуваних технологій
-          </h1>
+          <h1 class="title benefits__title">Стек використовуваних технологій</h1>
           <div class="tech-general">
             <div class="tech-wrapper">
               <h2 class="tech-wrapper__title">Front-end</h2>

@@ -1,0 +1,36 @@
+.social-list {
+  @extend %flexCenterCenter;
+  @extend %listStyleNone;
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link {
+  @extend %flexCenterCenter;
+
+  width: 44px;
+  height: 44px;
+
+  color: #afb1b8;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  transition: color $generalAnimation, background-color $generalAnimation;
+
+  &--footer {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $colorFocus;
+  }
+}

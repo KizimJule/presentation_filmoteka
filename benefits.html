@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IceCream</title>
+    <title>Filmoteka</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+    <link rel="apple-icon" sizes="180x180" href="./images/favicon/favicon.png" />
+    <link rel="mask-icon" href="./images/favicon/favicon.svg" color="#ff6b08" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -23,32 +29,17 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header header-home">
       <div class="container header__container">
         <nav class="header-nav">
-          <a class="logo logo--up" href="https://nickleso.github.io/parcel-ice-team7/" target="_blank">
-            <picture>
-              <source
-                srcset="
-                  ./images/present/logo.png    1x,
-                  ./images/present/logo@2x.png 2x
-                "
-              />
-              <img src="./images/present/logo.png" alt="" />
-            </picture>
+          <a href="kyzym.github.io/this-team/" class="logo logo--up link" target="_blank">
+            <svg class="icon-home" width="24" height="24" style="stroke: white">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+            <span class="logo-span">Filmoteka</span>
           </a>
-          <ul class="header-nav__list">
-            <li class="header-nav__item">
-              <a
-                class="header-nav__link"
-                href="./index.html"
-                >початок</a
-              >
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./road.html">складнощі</a>
-            </li>
 
+          <ul class="header-nav__list">
             <li class="header-nav__item">
               <a class="header-nav__link" href="./team.html">команда</a>
             </li>
@@ -56,13 +47,18 @@
               <a class="header-nav__link" href="./shopper.html">Покупець</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--current" href="./benefits.html">Переваги</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./technology.html"
-                >Технології</a
+              <a class="header-nav__link header-nav__link--current" href="./benefits.html"
+                >Переваги</a
               >
             </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./road.html">складнощі</a>
+            </li>
+
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./technology.html">Технології</a>
+            </li>
+
             <li class="header-nav__item">
               <a class="header-nav__link" href="./senks.html">Дякуємо</a>
             </li>
@@ -73,27 +69,28 @@
     <main>
       <section class="benefits section">
         <div class="container container--benefits">
-          <h1 class="title benefits__title">Чому саме IceCream</h1>
+          <h1 class="title benefits__title">Чому саме Filmoteka</h1>
           <div class="benefits__general">
             <ul class="benefits__elements benefits__elements--one">
               <li class="benefits__item">
-                
-                  Три наші основні локації - найбільш пекельні місця США, в яких
-                  можна зараз відвідати найбільш смачне морозиво
-              
-              </li>
-              <li class="benefits__item">Лише два тапа по екрану - і ти знаешь за скільки хвилин ти будешь задоволений
+                Зараз ми не можемо уявити наше життя без кіно, телебачення, серіалів. Ми надаємо
+                мождивість ппереглянути улюблений фільм на телевізорі, телефоні, планшеті, або
+                домашньому комп'ютері.
               </li>
               <li class="benefits__item">
-                Можна знайти звичний смак морозива в інших містах країни та світу - дивись франшизи
+                Наш сайт допоможе знайти цікавий фільм за своїми уподобаннями, витративши якнайменше
+                часу та зусиль
+              </li>
+              <li class="benefits__item">
+                З Filmoteka ви економити кошти на походи до кінотеатру, бо усі популярні фільми вже
+                на вішому екрані
+              </li>
+              <li class="benefits__item">
+                Filmoteka представляє основну інформацію про величезну кількість фільмів, у тому
+                числі інформацію про рейтинг, дату релізу, стислий опис сюжету
               </li>
             </ul>
-            <ul class="benefits__elements">
-              <li class="benefits__item">Морозиво може бути прямо біля тебе - просто відкрий карту на
-                сайті та подивись де зараз найближчий фургон</li>
-              <li class="benefits__item"> В наших роз&#x27їзних фургонах завжди є повний асортимент</li>
-              <li class="benefits__item">Це кажуть всі, але морозиво IceCream дійсно із молока</li>
-            </ul>
+            <ul class="benefits__elements"></ul>
           </div>
         </div>
       </section>

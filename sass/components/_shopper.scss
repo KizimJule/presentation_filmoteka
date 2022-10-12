@@ -1,0 +1,44 @@
+.shopper {
+  height: 100vh;
+}
+
+.shopper__title {
+  margin-bottom: 30px;
+}
+
+.shopper__general {
+  display: flex;
+}
+
+.shopper__elements {
+  flex-basis: calc((100% - 40px) / 2);
+
+  &--one {
+    margin-right: 80px;
+  }
+}
+
+.shopper__name {
+  color: rgb(16, 109, 216);
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+// @counter-style lllist {
+//   system: cyclic;
+//   symbols: '\223F';
+//   suffix: ' ';
+// }
+
+// .shopper__list {
+//   list-style-type: lllist;
+// }
+
+.shopper__item {
+  font-size: 24px;
+  color: #d41443;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

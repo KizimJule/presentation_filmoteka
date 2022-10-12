@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IceCream</title>
+    <title>Filmoteka</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
+    <link rel="apple-icon" sizes="180x180" href="./images/favicon/favicon.png" />
+    <link rel="mask-icon" href="./images/favicon/favicon.svg" color="#ff6b08" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -26,38 +29,19 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header header-home">
       <div class="container header__container">
         <nav class="header-nav">
-          <a
-            class="logo logo--up"
-            href="https://nickleso.github.io/parcel-ice-team7/"
-            target="_blank"
-          >
-            <picture>
-              <source
-                srcset="
-                  ./images/present/logo.png    1x,
-                  ./images/present/logo@2x.png 2x
-                "
-              />
-              <img src="./images/present/logo.png" alt="" />
-            </picture>
+          <a href="kyzym.github.io/this-team/" class="logo logo--up link" target="_blank">
+            <svg class="icon-home" width="24" height="24" style="stroke: white">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+            <span class="logo-span">Filmoteka</span>
           </a>
+
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a class="header-nav__link" href="./index.html">початок</a>
-            </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./road.html">складнощі</a>
-            </li>
-
-            <li class="header-nav__item">
-              <a
-                class="header-nav__link header-nav__link--current"
-                href="./team.html"
-                >команда</a
-              >
+              <a class="header-nav__link header-nav__link--current" href="./team.html">команда</a>
             </li>
             <li class="header-nav__item">
               <a class="header-nav__link" href="./shopper.html">Покупець</a>
@@ -66,9 +50,10 @@
               <a class="header-nav__link" href="./benefits.html">Переваги</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="./technology.html"
-                >Технології</a
-              >
+              <a class="header-nav__link" href="./road.html">складнощі</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./technology.html">Технології</a>
             </li>
             <li class="header-nav__item">
               <a class="header-nav__link" href="./senks.html">Дякуємо</a>
@@ -80,42 +65,9 @@
     <main>
       <section class="team section">
         <div class="container">
-          <h1 class="title team__title">Наша команда: TeamSeven</h1>
+          <h1 class="title team__title">Наша команда: This Team</h1>
+
           <ul class="team__list">
-            <li class="team__member">
-              <picture>
-                <img
-                  class="team__photo"
-                  src="./images/present/team/nikolay.jpg"
-                  alt="Николай Лесьо"
-                  width="218"
-                  height="218"
-                />
-              </picture>
-
-              <div class="team__descr">
-                <h3 class="team__name">Микола Лесьо</h3>
-                <p class="team__position" lang="en">Team Lead</p>
-                <p class="team__section">All sections</p>
-              </div>
-            </li>
-            <li class="team__member">
-              <picture>
-                <img
-                  class="team__photo"
-                  src="./images/present/team/vjacheslav.png"
-                  alt="Вячеслав Тиховлис"
-                  width="218"
-                  height="218"
-                />
-              </picture>
-
-              <div class="team__descr">
-                <h3 class="team__name">Вячеслав Тиховліс</h3>
-                <p class="team__position" lang="en">Scrum Master</p>
-                <p class="team__section">Gallery</p>
-              </div>
-            </li>
             <li class="team__member">
               <picture>
                 <img
@@ -126,11 +78,42 @@
                   height="218"
                 />
               </picture>
-
               <div class="team__descr">
                 <h3 class="team__name">Денис Кизим</h3>
-                <p class="team__position" lang="en">Frontend Developer</p>
-                <p class="team__section">Header</p>
+                <p class="team__position" lang="en">Team Lead</p>
+              </div>
+            </li>
+
+            <li class="team__member">
+              <picture>
+                <img
+                  class="team__photo"
+                  src="./images/present/team/anna.png"
+                  alt="Анна Потапова"
+                  width="218"
+                  height="218"
+                />
+              </picture>
+              <div class="team__descr">
+                <h3 class="team__name">Анна Потапова</h3>
+                <p class="team__position" lang="en">Scrum Master</p>
+              </div>
+            </li>
+
+            <li class="team__member">
+              <picture>
+                <img
+                  class="team__photo"
+                  src="./images/present/team/nikolay.jpg"
+                  alt="Микола Лесьо"
+                  width="218"
+                  height="218"
+                />
+              </picture>
+
+              <div class="team__descr">
+                <h3 class="team__name">Микола Лесьо</h3>
+                <p class="team__position" lang="en">Developer</p>
               </div>
             </li>
 
@@ -139,7 +122,7 @@
                 <img
                   class="team__photo"
                   src="./images/present/team/julia.jpg"
-                  alt="Юлия Кизим"
+                  alt="Юлія Кизим"
                   width="218"
                   height="218"
                 />
@@ -147,10 +130,10 @@
 
               <div class="team__descr">
                 <h3 class="team__name">Юлія Кизим</h3>
-                <p class="team__position" lang="en">Frontend Developer</p>
-                <p class="team__section">Hero</p>
+                <p class="team__position" lang="en">Developer</p>
               </div>
             </li>
+
             <li class="team__member">
               <picture>
                 <img
@@ -161,13 +144,12 @@
                   height="218"
                 />
               </picture>
-
               <div class="team__descr">
                 <h3 class="team__name">Андрій Луценко</h3>
-                <p class="team__position" lang="en">Frontend Developer</p>
-                <p class="team__section">Products</p>
+                <p class="team__position" lang="en">Developer</p>
               </div>
             </li>
+
             <li class="team__member">
               <picture>
                 <img
@@ -178,30 +160,29 @@
                   height="218"
                 />
               </picture>
-
               <div class="team__descr">
                 <h3 class="team__name">Богдан Макогонюк</h3>
-                <p class="team__position" lang="en">Frontend Developer</p>
-                <p class="team__section">About</p>
+                <p class="team__position" lang="en">Developer</p>
               </div>
             </li>
+
             <li class="team__member">
               <picture>
                 <img
                   class="team__photo"
-                  src="./images/present/team/iryna.jpg"
-                  alt="Ирина Рудик"
+                  src="./images/present/team/Babkin_Ruslan.jpg"
+                  alt="Руслан Бабкін"
                   width="218"
                   height="218"
                 />
               </picture>
 
               <div class="team__descr">
-                <h3 class="team__name">Ірина Рудик</h3>
-                <p class="team__position" lang="en">Frontend Developer</p>
-                <p class="team__section">Advantages</p>
+                <h3 class="team__name">Руслан Бабкін</h3>
+                <p class="team__position" lang="en">Developer</p>
               </div>
             </li>
+
             <li class="team__member">
               <picture>
                 <img
@@ -215,10 +196,10 @@
 
               <div class="team__descr">
                 <h3 class="team__name">Оксана Конєва</h3>
-                <p class="team__position" lang="en">Frontend Developer</p>
-                <p class="team__section">Customer reviews</p>
+                <p class="team__position" lang="en">Developer</p>
               </div>
             </li>
+
             <li class="team__member">
               <picture>
                 <img
@@ -232,25 +213,23 @@
 
               <div class="team__descr">
                 <h3 class="team__name">Дмитро Пушкаренко</h3>
-                <p class="team__position" lang="en">Frontend Developer</p>
-                <p class="team__section">Contacts</p>
+                <p class="team__position" lang="en">Developer</p>
               </div>
             </li>
             <li class="team__member">
               <picture>
                 <img
                   class="team__photo"
-                  src="./images/present/team/anna.png"
-                  alt="Анна Потапова"
+                  src="./images/present/team/vjacheslav.png"
+                  alt="Вячеслав Тиховліс"
                   width="218"
                   height="218"
                 />
               </picture>
 
               <div class="team__descr">
-                <h3 class="team__name">Анна Потапова</h3>
-                <p class="team__position" lang="en">Frontend Developer</p>
-                <p class="team__section">Footer</p>
+                <h3 class="team__name">Вячеслав Тиховліс</h3>
+                <p class="team__position" lang="en">Developer</p>
               </div>
             </li>
           </ul>

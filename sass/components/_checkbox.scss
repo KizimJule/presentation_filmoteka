@@ -1,0 +1,51 @@
+.checkbox-form {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $colorText;
+
+  &__link {
+    cursor: pointer;
+    color: $colorFocus;
+  }
+
+  &__text {
+    @media screen and (max-width: 1279px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.checkbox-form__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  fill: transparent;
+
+  border-radius: 2px;
+  outline: 2px solid $colorH2-h3;
+  outline-offset: -2px;
+
+  transition: fill $generalAnimation, backgroud-color $generalAnimation,
+    outline-color $generalAnimation;
+}
+
+.checkbox-form__checkbox:focus + .checkbox-form__icon {
+  outline-color: $colorFocus;
+}
+
+.checkbox-form__checkbox:checked + .checkbox-form__icon {
+  fill: #ffffff;
+  background-color: $colorFocus;
+  outline: none;
+}

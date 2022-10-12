@@ -1,0 +1,65 @@
+.customer {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+
+  height: 100%;
+  transition: box-shadow $generalAnimation;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.customer__description {
+  flex-grow: 1;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.customer__company {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $colorH2-h3;
+  margin-bottom: 4px;
+}
+
+.customer__type {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: $colorText;
+}
+
+.customer__vor-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.customer__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  padding: 17% 6.5%;
+
+  background: rgba(33, 150, 243, 0.9);
+
+  transition: transform $generalAnimation;
+
+  .customer:hover &,
+  .customer:focus & {
+    transform: translateY(-101%);
+  }
+}
+
+.customer__overlay-descr {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
