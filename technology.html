@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header-nav">
+          <a
+            class="logo logo--up"
+            href="https://nickleso.github.io/parcel-ice-team7/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                srcset="
+                  ./images/present/logo.png    1x,
+                  ./images/present/logo@2x.png 2x
+                "
+              />
+              <img src="./images/present/logo.png" alt="" />
+            </picture>
+          </a>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./index.html">початок</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./road.html">складнощі</a>
+            </li>
+
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./team.html">команда</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./shopper.html">Покупець</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./benefits.html">Переваги</a>
+            </li>
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header-nav__link--current"
+                href="./technology.html"
+                >Технології</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./senks.html">Дякуємо</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="benefits section">
+        <div class="container container--benefits">
+          <h1 class="title benefits__title">
+            Стек використовуваних технологій
+          </h1>
+          <div class="tech-general">
+            <div class="tech-wrapper">
+              <h2 class="tech-wrapper__title">Front-end</h2>
+              <ul class="tech-wrapper__list">
+                <li class="benefits__item">HTML</li>
+                <li class="benefits__item">CSS/SCSS</li>
+                <li class="benefits__item">FLEXBOX</li>
+                <li class="benefits__item">BEM</li>
+                <li class="benefits__item">Animate.css</li>
+                <li class="benefits__item">JavaScript</li>
+              </ul>
+            </div>
+
+            <div class="tech-wrapper">
+              <h2 class="tech-wrapper__title">Utilites</h2>
+              <ul class="tech-wrapper__list--2">
+                <li class="benefits__item">VSCode</li>
+                <li class="benefits__item">Parcel</li>
+                <li class="benefits__item">Figma</li>
+                <li class="benefits__item">SVG</li>
+                <li class="benefits__item">Git/GitHub</li>
+              </ul>
+            </div>
+
+            <div class="tech-wrapper">
+              <h2 class="tech-wrapper__title">Backend</h2>
+              <ul class="tech-wrapper__list--3">
+                <li class="benefits__item">Node.js</li>
+                <li class="benefits__item">NPM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

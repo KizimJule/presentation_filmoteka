@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceCream</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header-nav">
+          <a
+            class="logo logo--up"
+            href="https://nickleso.github.io/parcel-ice-team7/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                srcset="
+                  ./images/present/logo.png    1x,
+                  ./images/present/logo@2x.png 2x
+                "
+              />
+              <img src="./images/present/logo.png" alt="" />
+            </picture>
+          </a>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./index.html">початок</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./road.html">складнощі</a>
+            </li>
+
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./thanks.html">команда</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./shopper.html">Покупець</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./benefits.html">Переваги</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./technology.html"
+                >Технології</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header-nav__link--current"
+                href="./senks.html"
+                >Дякуємо</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="thanks section">
+        <div class="container">
+          <h1 class="title thanks__title">Наша подяка</h1>
+          <ul class="thanks__list">
+            <li class="thanks__member">
+              <picture>
+                <img
+                  class="thanks__photo"
+                  src="./images/thanks/ser-d.jpg"
+                  alt="Сергій Дикий"
+                  width="300"
+                />
+              </picture>
+
+              <div class="thanks__descr">
+                <h3 class="thanks__name">Сергій Дикий</h3>
+                <p class="thanks__section">Ментор</p>
+              </div>
+            </li>
+            <li class="thanks__member">
+              <picture>
+                <img
+                  class="thanks__photo"
+                  src="./images/thanks/ann-a.jpg"
+                  alt="Анна Абаджиєва"
+                  width="300"
+                />
+              </picture>
+
+              <div class="thanks__descr">
+                <h3 class="thanks__name">Анна Абаджиєва</h3>
+                <p class="thanks__section">Клієнт-менеджер</p>
+              </div>
+            </li>
+
+            <li class="thanks__photo--logo">
+              <img
+                class="thanks__"
+                src="./images/thanks/logo.png"
+                alt="Logo goit"
+                width="400"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
