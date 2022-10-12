@@ -1603,15 +1603,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.benefits__elements {
-  -ms-flex-preferred-size: calc((100% - 40px) / 2);
-      flex-basis: calc((100% - 40px) / 2);
-}
-
-.benefits__elements--one {
-  margin-right: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .benefits__item {
@@ -1662,10 +1655,6 @@ img {
   text-decoration: underline;
 }
 
-.thanks {
-  background-color: #fff5f6;
-}
-
 .thanks__title {
   margin-bottom: 30px;
 }
@@ -1712,7 +1701,7 @@ img {
   margin: 10px;
   -ms-flex-preferred-size: calc((100% - 400px) / 2);
       flex-basis: calc((100% - 400px) / 2);
-  height: 500px;
+  height: 520px;
 }
 
 .thanks__name {
@@ -1790,10 +1779,6 @@ img {
   text-decoration: underline;
 }
 
-.thanks {
-  background-color: #fff5f6;
-}
-
 .thanks__title {
   margin-bottom: 30px;
 }
@@ -1840,7 +1825,7 @@ img {
   margin: 10px;
   -ms-flex-preferred-size: calc((100% - 400px) / 2);
       flex-basis: calc((100% - 400px) / 2);
-  height: 500px;
+  height: 520px;
 }
 
 .thanks__name {

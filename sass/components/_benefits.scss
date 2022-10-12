@@ -9,6 +9,8 @@
 
 .benefits__general {
   display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 // @counter-style lllist {
@@ -17,14 +19,14 @@
 //   suffix: ' ';
 // }
 
-.benefits__elements {
-  flex-basis: calc((100% - 40px) / 2);
-  // list-style-type: lllist;
+// .benefits__elements {
+//   // flex-basis: calc((100% - 40px) / 2);
+//   // list-style-type: lllist;
 
-  &--one {
-    margin-right: 90px;
-  }
-}
+//   &--one {
+//     margin-right: 90px;
+//   }
+// }
 
 .benefits__item {
   font-size: 24px;
