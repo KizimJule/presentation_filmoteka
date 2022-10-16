@@ -162,7 +162,7 @@ img {
 .header-home {
   margin: 0 auto;
   padding-top: 12px;
-  background-image: url("/images/header/home/home-desk.jpg");
+  background-image: url("/images/header/home/home-desk@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
