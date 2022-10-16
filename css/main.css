@@ -1617,6 +1617,12 @@ img {
   margin-bottom: 30px;
 }
 
+.type-text {
+  font-size: 80px;
+  text-align: center;
+  color: black;
+}
+
 .tech-general {
   display: -webkit-box;
   display: -ms-flexbox;
