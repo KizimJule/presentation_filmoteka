@@ -175,36 +175,6 @@ img {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .header-home {
-    background-image: url("/images/header/home/home-mob@2x.jpg");
-  }
-}
-
-@media (min-width: 321px) {
-  .header-home {
-    background-image: url("/images/header/home/home-tab.jpg");
-  }
-}
-
-@media (min-width: 321px) and (min-device-pixel-ratio: 2), (min-width: 321px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 321px) and (min-resolution: 192dpi), (min-width: 321px) and (min-resolution: 2dppx) {
-  .header-home {
-    background-image: url("/images/header/home/home-tab@2x.jpg");
-  }
-}
-
-@media (min-width: 769px) {
-  .header-home {
-    background-image: url("/images/header/home/home-desk.jpg");
-  }
-}
-
-@media (min-width: 769px) and (min-device-pixel-ratio: 2), (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 192dpi), (min-width: 769px) and (min-resolution: 2dppx) {
-  .header-home {
-    background-image: url("/images/header/home/home-desk@2x.jpg");
-  }
-}
-
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
