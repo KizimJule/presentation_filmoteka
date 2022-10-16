@@ -1,12 +1,11 @@
-const text = ['Наша команда,\n', 'thisTeam!\n'];
-
 let line = 0;
 let count = 0;
 let result = '';
+let text = 'Наша команда: thisTeam';
 function typeLine() {
   let interval = setTimeout(() => {
     result += text[line][count];
-    document.querySelector('pre').innerHTML = result + '|';
+    document.querySelector('.team__title').innerHTML = result + '|';
 
     count++;
     if (count >= text[line].length) {
@@ -14,7 +13,7 @@ function typeLine() {
       line++;
       if (line == text.length) {
         clearTimeout(interval);
-        document.querySelector('pre').innerHTML = result;
+        document.querySelector('.team__title').innerHTML = result;
         return true;
       }
     }

@@ -14,5 +14,22 @@
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
-  "cSpell.words": ["команда", "Наша"]
+  "cSpell.words": [
+    "використовуваних",
+    "Дякуємо",
+    "команда",
+    "користувач",
+    "Наша",
+    "Переваги",
+    "подяка",
+    "Покупець",
+    "саме",
+    "Складнощі",
+    "Стек",
+    "Технології",
+    "технологій",
+    "Чому",
+    "Cкладнощі",
+    "Filmoteka"
+  ]
 }
