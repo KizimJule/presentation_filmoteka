@@ -1,13 +1,19 @@
 .shopper {
   height: 100vh;
-}
 
-.shopper__title {
-  margin-bottom: 30px;
-}
+  &__title {
+    margin-bottom: 30px;
+  }
 
-.shopper__general {
-  display: flex;
+  &__general {
+    display: flex;
+  }
+
+  &__name {
+    color: $colorSenks;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
 }
 
 .shopper__elements {
@@ -18,15 +24,9 @@
   }
 }
 
-.shopper__name {
-  color: rgb(16, 109, 216);
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-
 .shopper__item {
   font-size: 24px;
-  color: #d41443;
+  color: $currentColor;
 
   &:not(:last-child) {
     margin-bottom: 20px;

@@ -12,3 +12,34 @@ body {
   color: #d41443;
   margin-bottom: 40px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+main {
+  flex: 1;
+}
+footer {
+  flex-shrink: 0;
+}

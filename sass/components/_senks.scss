@@ -10,67 +10,58 @@
     justify-content: space-around;
 
     @extend %listStyleNone;
-
-    @media screen and (max-width: 767px) {
-      flex-direction: column;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
   }
 
   &__descr {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-}
 
-.thanks__member {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 8px 8px 8px 8px;
-  overflow: hidden;
+  &__member {
+    background-color: $whiteColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px 8px 8px 8px;
+    overflow: hidden;
 
-  border: 1px solid transparent;
-  margin: 10px;
+    border: 1px solid transparent;
+    margin: 10px;
 
-  flex-basis: calc((100% - 400px) / 2);
-  height: 520px;
+    flex-basis: calc((100% - 400px) / 2);
+    height: 520px;
+  }
 
-  //   overflow: hidden;
-}
+  &__name {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $currentColor;
+    margin-bottom: 10px;
+  }
 
-.thanks__name {
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #d41443;
-  margin-bottom: 10px;
-}
+  &__position {
+    font-size: 19px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $colorSenks;
+    margin-bottom: 10px;
+  }
 
-.thanks__position {
-  font-size: 19px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #8a1c36;
-  margin-bottom: 10px;
-}
+  &__photo {
+    width: 100%;
+    object-fit: cover;
+  }
 
-.thanks__photo {
-  width: 100%;
-  object-fit: cover;
-}
-
-.thanks__section {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #0d4683;
+  &__section {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $colorH2-h3;
+  }
 }
